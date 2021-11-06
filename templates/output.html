@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Billionaire's Web</title>
+    <style>
+        table, th, td {
+         
+          color: black;
+          
+        }
+        body{
+            width: 80%;
+            height: 80%;
+            border: 15px solid black;
+            padding: 50px;
+            margin: 50px;
+        }
+        .footer {
+            font-size: 20px ;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body >
+  <div>
+    <h1 style="color: black; text-align: center;"> <b>Report</b> </h1>
+    <h2 >About Bitcoin </h2>
+    <h4 >Bitcoin is known as a type of cryptocurrency because it uses cryptography to keep it secure. There are no physical bitcoins, only balances kept on a public ledger that everyone has transparent access to (although each record is encrypted). All Bitcoin transactions are verified by a massive amount of computing power via a process known as "mining." Bitcoin is not issued or backed by any banks or governments, nor is an individual bitcoin valuable as a commodity. Despite it not being legal tender in most parts of the world, Bitcoin is very popular and has triggered the launch of hundreds of other cryptocurrencies, collectively referred to as altcoins. Bitcoin is commonly abbreviated as BTC when traded. </h4>
+    <h2 >History of Bitcoin</h2>
+    <h4 >In hindsight, the rise of cryptocurrencies appears to have begun with the introduction of bitcoin in 2009. Earlier cryptocurrencies had been launched in the 1990s, but they failed to take hold. David Chaum’s DigiCash is widely thought to have been ahead of its time. Chaum founded his company at the start of the decade, well before the rise of e-commerce. By 1998, it had filed for bankruptcy. More generally, early “digital-cash firms made a fatal miscalculation,” Julia Pitta wrote for Forbes in 1999. “They figured, wrongly it turns out, that consumers would be leery of using credit cards on the Web and would demand tight security and ironclad privacy.” It was not clear, at first, that bitcoin would be any different. Perhaps fearing the fate of e-gold creator Douglas Jackson, bitcoin’s designer(s) adopted a pseudonym––the now-famous Satoshi Nakamoto––and shared the upstart open source project in email to the Cryptography Mailing List on January 8, 2009. Nakamoto had circulated a white paper explaining the technical details a few months before. Congratulatory replies soon followed, but there was little indication that bitcoin would quickly become a household name. It was little more than a novelty discussed by a handful of programmers on the Internet. Over the nine months that followed, bitcoin was basically worthless. Transactions consisted of mere test spends by the few programmers interested in bitcoin at the time in order to work out bugs in the protocol. No one was handing over valuable goods or services for bitcoin. There were no market exchange rates with the dollar, euro, or other currencies. Indeed, there were no exchanges to facilitate currency exchange. The first positive-price transaction for bitcoin appears to have occurred in early October 2009. On October 5, a user employing the username New Liberty Standard estimated that it cost roughly $1 to produce 1,309.03 bitcoin. Seven days later, he purchased 5,050 bitcoin from Martti Malmi for $5.05, settling the transaction via PayPal. The price of bitcoin, in other words, stood at just $0.0010.</h4>
+    <h2 >How bitcoin is performing?</h2>
+    <h4 >The live Bitcoin price today is $60,735.46 USD with a 24-hour trading volume of $25,317,164,938 USD. We update our BTC to USD price in real-time. Bitcoin is down 1.21% in the last 24 hours. The current CoinMarketCap ranking is #1, with a live market cap of $1,145,033,566,608 USD.</h4>
+    <h2 ><b>What this application does?</b></h2>
+    <h3 >This application predicts the future of cryptocurrency(Bitcoin). We provide the data in the form of graph so the user can be the better judge.</h3>
+    <div>
+      <h2 ><b>Our prediction.</b></h2>
+      <div><img src="{% static 'images\fc_zoom.png' %}" width="500" height="333"> </div>
+      <h4 >Above figure shows the prediction from the training we have done using dataset available. Shaded region shows how high and low it can go. Right side shows history of bitcoin.</h4>
+    </div>
+  </div>  
+  
+  <table style="width:80px">
+        <tr>
+          <th><img src="{% static 'images\fc_val.png' %}" width="500" height="333"></th>
+          <th><img src="{% static 'images\btcprice.png' %}" width="500" height="333"></th>
+        </tr>
+      </table>
+      <h3 style="color: yellow; background-color: orange;">! We just give a prediction after training our model with previous dataset, we are not countable for any fluctuation as the price of cryptocurrency are not predictable. ! </h3>
+      <div>
+        <h1 style="color: white">asd</h1>
+      </div>
+      <div class="footer">
+        <p style="text-align: center;">Animesh Jain &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Krishan Rupani &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rishabh Nihalani &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kanishk Dhondiyal  </p>
+      </div>
+
+</body>
